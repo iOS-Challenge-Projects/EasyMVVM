@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		04A36D9924EA7BDA00F1EAFC /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A36D9824EA7BDA00F1EAFC /* User.swift */; };
+		04A36D9D24EA7C9200F1EAFC /* main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04A36D9C24EA7C9200F1EAFC /* main.storyboard */; };
 		C94F4BCF220EB4220096F380 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C94F4BCE220EB4220096F380 /* AppDelegate.swift */; };
 		C94F4BD1220EB4220096F380 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C94F4BD0220EB4220096F380 /* RootViewController.swift */; };
 		C94F4BD3220EB4230096F380 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C94F4BD2220EB4230096F380 /* Assets.xcassets */; };
@@ -14,6 +16,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		04A36D9824EA7BDA00F1EAFC /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		04A36D9C24EA7C9200F1EAFC /* main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = main.storyboard; sourceTree = "<group>"; };
 		C94F4BCB220EB4220096F380 /* EasyMVVM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EasyMVVM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C94F4BCE220EB4220096F380 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C94F4BD0220EB4220096F380 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
@@ -33,10 +37,45 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		04A36D9624EA7BA800F1EAFC /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				04A36D9C24EA7C9200F1EAFC /* main.storyboard */,
+				C94F4BD4220EB4230096F380 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		04A36D9724EA7BC400F1EAFC /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				C94F4BD0220EB4220096F380 /* RootViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		04A36D9A24EA7BDE00F1EAFC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				04A36D9824EA7BDA00F1EAFC /* User.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		04A36D9B24EA7C1300F1EAFC /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C94F4BD7220EB4230096F380 /* Info.plist */,
+				C94F4BCE220EB4220096F380 /* AppDelegate.swift */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		C94F4BC2220EB4220096F380 = {
 			isa = PBXGroup;
 			children = (
 				C94F4BCD220EB4220096F380 /* EasyMVVM */,
+				C94F4BD2220EB4230096F380 /* Assets.xcassets */,
 				C94F4BCC220EB4220096F380 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -52,11 +91,10 @@
 		C94F4BCD220EB4220096F380 /* EasyMVVM */ = {
 			isa = PBXGroup;
 			children = (
-				C94F4BCE220EB4220096F380 /* AppDelegate.swift */,
-				C94F4BD0220EB4220096F380 /* RootViewController.swift */,
-				C94F4BD2220EB4230096F380 /* Assets.xcassets */,
-				C94F4BD4220EB4230096F380 /* LaunchScreen.storyboard */,
-				C94F4BD7220EB4230096F380 /* Info.plist */,
+				04A36D9724EA7BC400F1EAFC /* ViewControllers */,
+				04A36D9624EA7BA800F1EAFC /* Storyboards */,
+				04A36D9A24EA7BDE00F1EAFC /* Model */,
+				04A36D9B24EA7C1300F1EAFC /* Resources */,
 			);
 			path = EasyMVVM;
 			sourceTree = "<group>";
@@ -93,6 +131,7 @@
 				TargetAttributes = {
 					C94F4BCA220EB4220096F380 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1160;
 					};
 				};
 			};
@@ -120,6 +159,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C94F4BD3220EB4230096F380 /* Assets.xcassets in Resources */,
+				04A36D9D24EA7C9200F1EAFC /* main.storyboard in Resources */,
 				C94F4BD6220EB4230096F380 /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -133,6 +173,7 @@
 			files = (
 				C94F4BD1220EB4220096F380 /* RootViewController.swift in Sources */,
 				C94F4BCF220EB4220096F380 /* AppDelegate.swift in Sources */,
+				04A36D9924EA7BDA00F1EAFC /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,14 +313,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = N3P8URX7UV;
-				INFOPLIST_FILE = EasyMVVM/Info.plist;
+				INFOPLIST_FILE = EasyMVVM/resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.Rebeloper.EasyMVVM;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -290,14 +331,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = N3P8URX7UV;
-				INFOPLIST_FILE = EasyMVVM/Info.plist;
+				INFOPLIST_FILE = EasyMVVM/resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.Rebeloper.EasyMVVM;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
